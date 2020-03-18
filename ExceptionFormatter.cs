@@ -27,8 +27,7 @@ namespace Kailua.net.windward.utils
         {
             if(loggingEvent == null)
             {
-                Console.WriteLine("\n\nERROR: NO LOGGING EVENT\n\n");
-                return;
+                throw new ArgumentNullException("loggingEvent");
             }
 
             String header = String.Empty;
